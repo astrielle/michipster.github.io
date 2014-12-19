@@ -1,157 +1,100 @@
-/*
-  'Blackout Sunrise' (stroked style)
-  https://www.theleagueofmoveabletype.com/blackout
-
-  Copyright (c) 2012, Tyler Finck <hello@sursly.com>,
-  with Reserved Font Name: "Blackout".
-
-  This Font Software is licensed under the SIL Open Font License, Version 1.1.
-  http://scripts.sil.org/OFL
-*/
-
-/*
-    'High Tide'
-    http://fontfabric.com/high-tide-free-fonts/
-*/
-
-/*Retina Wood background from subtlepatterns.com*/
-
-/*social media icons from */
+/*social media icons from icomoon.io*/
 
 /*all images copyright Michelle Chen 2010-2014*/
 
-@font-face {
-  font-family: 'BlackoutSunrise';
-  src: url('../fonts/blackout_sunrise-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/blackout_sunrise-webfont.woff') format('woff'),
-       url('../fonts/blackout_sunrise-webfont.ttf')  format('truetype'),
-       url('../fonts/blackout_sunrise-webfont.svg#BlackoutSunrise') format('svg');
-}
+/* reds:
+#940000
+#82403D
+#5E3433
+#955251
+*/
 
 @font-face {
-  font-family: 'HighTideBold';
-  src: url('../fonts/HighTideBold.otf') format('opentype');
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot?-b748h0');
+    src:url('../fonts/icomoon.eot?#iefix-b748h0') format('embedded-opentype'),
+        url('../fonts/icomoon.woff?-b748h0') format('woff'),
+        url('../fonts/icomoon.ttf?-b748h0') format('truetype'),
+        url('../fonts/icomoon.svg?-b748h0#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-@font-face {
-    font-family: 'HighTideSans';
-    src: url('../fonts/HighTideSans.otf') format('opentype');
+[data-icon]:before {
+    font-family: 'icomoon';
+    content: attr(data-icon);
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+
+.icon-camera:before {
+    content: "\e90f";
+}
+.icon-facebook:before {
+    content: "\ea8d";
+}
+.icon-instagram:before {
+    content: "\ea90";
+}
+.icon-twitter:before {
+    content: "\ea92";
+}
+.icon-github:before {
+    content: "\eab1";
+}
+.icon-tumblr:before {
+    content: "\eabc";
+}
+.icon-linkedin:before {
+    content: "\eac8";
+}
+.icon-mail:before {
+    content: "\e600";
+}
+
 
 body{
-    background: url('../images/wood.png');
-    background-size: ;
-    background-position: center center;
-    background-repeat: repeat;
-}
-
-#overlay{
-    background:rgba(51,51,51, .4);
+    background-color: #f6f6f6;
+    font-size: 14px;
+    color: #555555;
 }
 
 h1{
-    color: #9EC3CF;
-    font-family: 'BlackoutSunrise', sans-serif;
-    font-size: 3.8em;
+    color: #f6f6f6;
+    font-family: 'Oswald', sans-serif;
+    font-size: 6em;
     text-align: center;
     letter-spacing:3px;
     padding: 10px;
-}
-
-h2{
-    color: #9EC3CF;
-    font-family: "HighTideSans", sans-serif;
-    font-size: 1.3em;
-    letter-spacing:1px;
-
 }
 
 p{
-    color: #E8E8E8;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 12px;
     font-weight: 300;
-    font-size: 1.1em;
-}
-
-p strong{
-    color: #9EC3CF;
-    letter-spacing: 1px;
-    font-weight: 400;
-
 }
 
 a{
-    color: #BFE0EB;
-    letter-spacing: 1px;
+    color:#955251;
 }
 
 a:hover{
+    color:#955251;
     opacity: .5;
 }
-
-label{
-    color: #E8E8E8;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    font-size: .9em;
-    margin-bottom: -5px;
-}
-
-#nav a{
-    color: #9EC3CF;
-    font-family: "HighTideSans", sans-serif;
-    font-size: .9em;
-    letter-spacing:3px;
-}
-
-#nav a:hover{
-    color: #F1F1F1;
-    opacity: .5;
-}
-
-#billboard h1 {
-    color: #F1F1F1;
-    font-family: 'BlackoutSunrise', sans-serif;
-    font-size: 9em;
-    text-align: center;
-    letter-spacing:2px;
-    padding-top: 20px;
-    padding-bottom: 25px;
-}
-
-#billboard h2 {
-    color: #F1F1F1;
-    font-family: 'Dawning of a New Day', cursive;
-    font-size: 2.3em;
-    text-align: center;
-}
-
-/*#nav {
-    background: rgba(36,36,36,.85);
-    text-align: center;
-    min-height: 40px;
-    padding-bottom: 10px;
-}
-
-#nav ul{
-    padding: 10px;
-}
-
-#nav li{
-    list-style-type: none;
-    display: inline;
-    float: left;
-    width: 25%; 
-}
-*/
 
 #billboard {
-    background: url('../images/bg/ocean.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    padding: 100px;
-    min-height: 600px;
+    background-color: #82403D; 
+    padding: 125px;
+    min-height: 300;
     text-align: center;
 }
 
@@ -159,92 +102,29 @@ label{
     max-width: 100%;
 }
 
-#about{
-    background: rgba(51, 51, 51, 0.67);
+#content{
     padding: 30px;
-}
-
-#selfie{
     text-align: center;
-    padding-top: 5px;
-}
-
-#about-right{
-    text-align: right;
-}
-
-#social{
-    margin-top: 20px;
 }
 
 .icon{
-    padding:15px;
+    padding: 5px;
+    font-size: 20px;
 }
 
-#misc{
-    text-align: right;
+@media screen and (max-width : 650px){
+#billboard{
+    padding:100px;
+    }
+    h1{
+    font-size: 4em;
+  }
 }
-
-#projects{
-    background: rgba(51, 51, 51, 0.67);
-    padding: 30px;
-    margin-top: 50px;
-    text-align: center;
-    font-size: .9em;
-}
-
-#projects img{
-    border-radius: 10px;
-    padding-bottom: 10px;
-}
-
-#projects p strong{
-    font-size: 1.1em;
-}
-
-#photo{
-    background: rgba(51, 51, 51, 0.67);
-    padding: 30px;
-    margin-top: 50px;
-    text-align: center;
-    padding-bottom: 50px;
-}
-
-#photo-row{
-    padding-top: 15px;
-}
-
-#photo img{
-    border-radius: 10px;
-    padding-bottom: 30px;
-}
-
-
-#contact{
-    background: rgba(51, 51, 51, 0.67);
-    padding: 30px;
-    margin-top: 50px;
-    text-align: left;
-
-}
-
-.button{
-    background-color: #B0D9E7;
-    border-radius: 5px;
-    color: #333;
-    font-family: 'Open Sans'
-}
-
-.button:hover{
-    background-color: #333;
-    opacity: .5;
-}
-
-#footer{
-    background: rgba(36,36,36,0.85);
-    padding-top: 10px;
-}
-
-#cr{
-    text-align: right;
+@media screen and (max-width : 500px){
+  #billboard{
+    padding:85px;
+    }
+    h1{
+    font-size: 3.3em;
+  }
 }
