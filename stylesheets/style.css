@@ -92,8 +92,8 @@ a:hover{
 
 #billboard {
     background-color: #82403D; 
-    padding: 125px;
-    min-height: 300;
+    padding: 85px;
+    min-height: 300px;
     text-align: center;
 }
 
